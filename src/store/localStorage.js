@@ -39,8 +39,8 @@ export const loadProps = (state, props_array, reducer) => {
         return newstate;
     } catch (err) {
         return undefined;
-    }
-
+    }    
+    
 };
 // выгружает prop из locastorage, принимает как аргументы state, имя пропа,
 // , возращает стейт можно доработать, чтобы принимал массив
