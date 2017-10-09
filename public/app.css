@@ -1,0 +1,146 @@
+.hidden {
+    display: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+.mail_button {
+    position: relative;
+    z-index: 6;
+    width: 3em;
+    height: 3em;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.map {
+    transition: 2s;
+    position: absolute;
+    background-image: url(map-schema.png);
+    background-size: inherit;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1600px;
+}
+
+.mailbox {
+    width: 50%;
+    top:30%;
+    transition: .4s;
+    position: absolute;
+    box-shadow: 2px 1px 3px black;
+    border-radius: 4px;
+    border: 3px solid gray;
+    background-color: white;
+    z-index: 2;
+    padding: 2%
+}
+
+.mailbox>p {
+    font-size: 2em;
+}
+.mailbox>button{
+    font-size: 3em;
+    padding: 4%;
+    border-radius: 4px;
+}   
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        margin-left: -200px;
+    }
+    ;
+    100% {
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+@keyframes fadeinright {
+    0% {
+        opacity: 0;
+        margin-left: 200px;
+    }
+    ;
+    100% {
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+        margin-left: 0px;
+    }
+    ;
+    100% {
+        opacity: 0;
+        margin-left: -200px;
+    }
+}
+
+@keyframes modfadein {
+    0% {
+        opacity: 0;
+        transform: scale(.8, .8);
+    }
+    ;
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes modfadeout {
+    0% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+    ;
+    100% {
+        opacity: 0;
+        transform: scale(.8, .8);
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #646464;
+    z-index: 1;
+    opacity: .5;
+}
+
+.modalbox {
+    left: 45%;
+    margin-left: -25%;
+    top:40%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.8em;
+    position: fixed;
+    margin: auto;
+    width: auto;
+    height: auto;
+    padding: 2em;
+    background: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+    z-index: 2
+}
+.npc{
+    position: fixed;
+    height: 600px;
+    left: 60%;
+    width: fit-content;
+    z-index: 3;
+}
+.avatar{
+    height: 100%;
+}

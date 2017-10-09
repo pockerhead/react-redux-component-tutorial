@@ -1,5 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import MessageBox from './containers/App'
+import configureStore from './store/configureStore'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = configureStore()
+
+render(
+  <Provider store={store}>
+    <MessageBox />
+  </Provider>,
+  document.getElementById('root')
+)
